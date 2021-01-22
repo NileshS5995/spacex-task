@@ -1,0 +1,86 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.hand {
+  cursor: pointer;
+}
+
+.card-flight .img-wrap {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+  position: relative;
+  height: 220px;
+  text-align: center;
+}
+.card-flight .img-wrap img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+.card-flight .info-wrap {
+  overflow: hidden;
+  padding: 15px;
+  border-top: 1px solid #eee;
+}
+.card-flight .bottom-wrap {
+  padding: 15px;
+  border-top: 1px solid #eee;
+}
+
+.card-flight .price-old {
+  color: #999;
+}
+
+.card-shadow {
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  cursor: pointer;
+}
+
+.card-shadow:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.hover-1-25:hover {
+  transform: scale(1.25);
+}
+
+
+.max-width {
+    max-width: 200px;
+}
+
+.containers {
+    background-color: #CCCCCC;
+}
+
+.title-color {
+    color: #2d2bad;
+}
+
+.desc-font {
+    font-size: 15px;
+    font-style: bold;
+    font-weight: 600;
+}
+.row-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+.unset-padding {
+padding: unset !important;
+padding: 0px !important;
+margin: unset !important;
+margin:  0px !important;
+}
+
+.main-title {
+    padding-top: 14px;
+}

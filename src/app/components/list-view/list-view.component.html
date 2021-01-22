@@ -1,0 +1,45 @@
+<div  class="row" class="containers unset-padding">
+    <div class="col-lg-12 order-lg-2 mb-3">
+        <div class="main-title ">
+            <h3 class="text-center">SpaceX Launch Programme</h3>
+        </div>
+        <app-loader *ngIf="loading; else productList"></app-loader>
+        <ng-template #productList>
+            <div  class="row" class="row row-container">
+                <ng-container *ngFor="let mission of missions; let i = index"  >
+                    <div class="col-md-3 " >
+                        <figure class="card card-flight card-shadow">
+                            <div class="img-wrap hand" >
+                                <img [src]="mission?.links?.mission_patch_small" alt="flight Image" />
+                            </div>
+                            <figcaption class="info-wrap hand">
+                                <h6 class="title title-color">
+                                {{ mission?.mission_name}} #{{mission?.flight_number}}
+                                </h6>
+                                <div class="clearfix pb-2 fs-14">
+                                    <span class="float-left desc-font">Mission Ids:</span>
+                                    <span class="float-right">{{mission?.flight_number}}</span>
+                                </div>
+                                <div class="clearfix pb-2 fs-14">
+                                    <span class="float-left desc-font">Launch Year:</span>
+                                    <span class="float-right">{{mission?.launch_year}}</span>
+                                </div>
+                                <div class="clearfix pb-2 fs-14">
+                                    <span class="float-left desc-font">Successful Launch:</span>
+                                    <span class="float-right">{{mission?.launch_success}}</span>
+                                </div>
+                                <div class="clearfix pb-2 fs-14">
+                                    <span class="float-left desc-font">Successful Landing:</span>
+                                    <span class="float-right"></span>
+                                </div>
+                            </figcaption>
+                        <div class="bottom-wrap">
+                        </div>
+                    </figure>
+                </div>
+            </ng-container>
+        </div>
+    </ng-template>
+  </div>
+</div>
+

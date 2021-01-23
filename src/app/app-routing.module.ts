@@ -6,7 +6,7 @@ import { DataService} from './service/data.service';
 
 const routes: Routes = [
   {
-    path: 'spacex-list', component: ListViewComponent
+    path: '', component: ListViewComponent
   }
 
 ];
